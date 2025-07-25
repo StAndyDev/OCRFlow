@@ -1,0 +1,14 @@
+OCRFlow/
+├── main.py              <- point d’entrée principal
+├── preprocessor.py      <- pour les traitements d'image (OpenCV)
+├── detector.py          <- pour YOLO / LayoutParser
+├── ocr.py               <- EasyOCR
+├── postprocessing.py    <- structuration, IA, Ollama...
+├── utils.py             <- fonctions partagées
+├── data/
+│   ├── raw/             <- images originales
+│   ├── processed/       <- images après prétraitement
+│   └── results/         <- sorties JSON, CSV, HTML, etc.
+├── notebooks/           <- pour tester dans un Jupyter si besoin
+├── README.md
+└── requirements.txt     <- dépendances Python
