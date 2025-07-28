@@ -1,3 +1,5 @@
+--- Project structure ---
+
 OCRFlow/
 ├── main.py              <- point d’entrée principal
 ├── preprocessor.py      <- pour les traitements d'image (OpenCV)
@@ -12,3 +14,8 @@ OCRFlow/
 ├── notebooks/           <- pour tester dans un Jupyter si besoin
 ├── README.md
 └── requirements.txt     <- dépendances Python
+
+--- models ---
+Segmentation (YOLOv8/DocLayNet) : malaysia-aiYOLOv8X-DocLayNet-Full-1024-42.pt
+
+
