@@ -1,16 +1,16 @@
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-from detector import YOLOLayoutDetector
+from detector import DocLayoutDetector
 
 def main():
     # --- Config ---
-    model_path = "malaysia-aiYOLOv8X-DocLayNet-Full-1024-42.pt"
+    model_path = "doclayout_yolo_docstructbench_imgsz1280_2501.pt"
     image_path = "data/raw/image-5bd08790e1864.png"
     output_json = "result.json"
 
     # --- Init du détecteur ---
-    detector = YOLOLayoutDetector(model_path, confidence=0.5)
+    detector = DocLayoutDetector(model_path, confidence=0.25)
 
     # --- Traitement ---
     zones = detector.process_image(image_path)
